@@ -1,95 +1,96 @@
 :root {
-      --primary-color: black;
-      --text-color: #ffffff;
-      --hover-color: rgba(255, 255, 255, 0.7);
-      --logo-size: 40px;
-    }
+  --primary-color: black;
+  --text-color: #ffffff;
+  --hover-color: rgba(255, 255, 255, 0.7);
+  --logo-size: 40px;
+}
 
-    * {
-       margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
-      font-family: 'Segoe UI', sans-serif;
-    }
+  font-family: "Segoe UI", sans-serif;
+}
 
-    .navbar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0.5rem 2rem;
-      background: var(--primary-color);
-      color: var(--text-color);
-    }
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  background: var(--primary-color);
+  color: var(--text-color);
+}
 
-    .navbar .logo {
-      display: flex;
-      align-items: center;
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 
-    .navbar .logo img {
-      height: var(--logo-size);
-      margin-right: 0.5rem;
-    }
+.navbar .logo img {
+  height: var(--logo-size);
+  margin-right: 0.5rem;
+}
 
-    .navbar ul {
-      list-style: none;
-      display: flex;
-      gap: 1.5rem;
-        margin: 0;
-      padding: 0;
-    }
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
 
-    .navbar ul li a {
-      text-decoration: none;
-      color: var(--text-color);
-      transition: color 0.3s ease;
-    }
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
 
-    .navbar ul li a:hover {
-      color: var(--hover-color);
-    }
+.navbar ul li a:hover {
+  color: var(--hover-color);
+}
 
-    @media (max-width: 600px) {
-      .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-      .navbar ul {
-        flex-direction: column;
-        gap: 0.75rem;
-        margin-top: 0.5rem;
-      }
-    }
-    .work{
-        background-color: var(--primary-color);
-        color: var(--text-color);
-        height: 25rem;
-    }
-    .grid-container {
+  .navbar ul {
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+}
+.work {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  height: 45rem;
+  width: auto;
+}
+.grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
   gap: 10px;
-  background-color:var(--primary-color);
+  background-color: var(--primary-color);
   padding: 10px;
   text-align: center;
 }
 
 .grid-container > div {
-  background-color:var(--primary-color);
-  color:var(--text-color);
+  background-color: var(--primary-color);
+  color: var(--text-color);
   padding: 10px;
 }
 .item1 {
   grid-column: 3/ 5;
   text-align: left;
 }
-.item1 h4{
-    font-size: 30px;
-    justify-content: start;
+.item1 h4 {
+  font-size: 30px;
+  justify-content: start;
 }
 .triangle {
   width: 0;
@@ -101,33 +102,39 @@
 .y-shape {
   position: absolute;
   left: 21.875rem;
-  top:0px;
+  top: 0px;
   z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
 }
 
-.y-shape::before{
-    content: "";
-    position: absolute;
-    left: 50%;
-    width: 3.75rem;
-    height: 21.875rem;
-    background-color: rgb(171, 135, 205);
-    transform-origin: center;
+.y-shape::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 3.75rem;
+  height: 21.875rem;
+  background-color: rgb(171, 135, 205);
+  transform-origin: center;
 }
-.y-shape::after{
-    content: "";
-    position: absolute;
-    left: 32%;
-    width: 3.75rem;
-    height: 10.625rem;
-    background-color: rgb(171, 135, 205);
-    transform-origin: center;
+.y-shape::after {
+  content: "";
+  position: absolute;
+  left: 32%;
+  width: 3.75rem;
+  height: 10.625rem;
+  background-color: rgb(171, 135, 205);
+  transform-origin: center;
 }
-.y-shape::after{
-    transform: translate(-50%,-30%) rotate(-50deg);
+.y-shape::after {
+  transform: translate(-50%, -30%) rotate(-50deg);
 }
-.y-shape::before{
-    transform: translate(-50%,-15%) rotate(40deg);
+.y-shape::before {
+  transform: translate(-50%, -15%) rotate(40deg);
 }
 .circle {
   width: 100px;
@@ -170,6 +177,219 @@
 .rectangle {
   width: 200px;
   height: 40px;
-  background-color: #4CAF50; /* لون أخضر */
+  background-color: #4caf50; /* لون أخضر */
+}
+.FaQs {
+  float: left;
+}
+.container {
+  display: flex;
+  background-color: rgb(11, 11, 11);
+  padding: 10px;
+  width: auto;
+  height: 500px;
+  margin-left: 0;
+}
+.container > div {
+  background-color: #000;
+  border: 2px solid rgb(234, 230, 230);
+  color: #f1f1f1;
+  padding: 10px;
+  width: 20%;
+  height: 75%;
+  text-align: center;
+}
+.container .rotate {
+  border: none;
+  color: #f1f1f1;
+  transform: rotate(-90deg);
+  height: 20%;
+}
+.triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid red; /* لون المثلث */
+}
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid blue;
+}
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid green;
+}
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid orange;
 }
 
+/* نصف دائرة علوية */
+.half-circle.top {
+  width: 100px;
+  height: 50px;
+  background-color: #3498db;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+
+/* دائرة صغيرة */
+.small-circle {
+  width: 30px;
+  height: 30px;
+  background-color: #e74c3c;
+  border-radius: 50%;
+}
+
+/* نصف دائرة سفلية */
+.half-circle.bottom {
+  width: 100px;
+  height: 50px;
+  background-color: #3498db;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* المسافة بين العناصر */
+  margin-top: 50px;
+}
+.small-box {
+  width: 50px;
+  height: 50px;
+  background-color: #2ecc71; /* لون أخضر جميل */
+}
+
+.small-circle {
+  width: 40px;
+  height: 40px;
+  background-color: #f39c12; /* لون برتقالي */
+  border-radius: 50%; /* يحول المربع إلى دائرة */
+}
+.img {
+  display: flex;
+  width: auto;
+  height: auto;
+  background-color: #000;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+}
+
+.con2 {
+  display: flex;
+  background-color: rgb(11, 11, 11);
+  padding: 10px;
+  width: auto;
+  margin-right: 0px;
+  gap: 7%;
+}
+.con2 > div {
+  background-color: #000;
+  color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+  width: 30%;
+}
+.con2 .rotate {
+  border: none;
+  color: #f1f1f1;
+  transform: rotate(-90deg);
+  height: 20%;
+}
+.outer {
+  width: 200px;
+  height: 100px;
+  background-color: #ccc; /* لون نصف الدائرة الكبيرة */
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.inner {
+  width: 100px;
+  height: 50px;
+  background-color: black; /* نصف الدائرة الداخلية */
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #d469ff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px;
+  overflow: hidden;
+}
+
+.hero {
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative; /* مهم جداً */

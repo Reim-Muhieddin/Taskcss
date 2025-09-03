@@ -19,7 +19,7 @@ git config --global credential.helper manager
 
 echo.
 echo Git configuration updated successfully!
-echo User:arwaalmlhan
-echo Email: arwaalmlhan@gmail.com
+echo User:Reim-Muhieddin
+echo Email: softwarereem@gmail.com
 echo Credentials cleared from Windows Credential Manager
 pause
